@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  notiphone.api:
+    image: ${DOCKER_REGISTRY}notiphoneapi
+    build:
+      context: .
+      dockerfile: src/Notiphone.Api/Dockerfile
